@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Open+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+body {
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+    
+}
+
+.homePage {
+    background-image: url("LAUNCHES_Starlink_SLC_40_Desktop_ad41fa5a42.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    height: 100vh;
+}
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   padding-top: 35px;
+   margin-left: 10px;
+}
+
+
+.logo{
+  
+    position: absolute;
+    top: 28px;
+    left: 40px;
+    right: 30px;
+    width: 210px;
+    height: auto;
+}
+.logo img {
+    display: block;
+    width: 100%;
+}
+
+li, a {
+    font-weight: 900;
+    background-color: transparent;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.4;
+    transition: opacity .6s linear;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+}
+
+
+.nav__links{
+    left: 25px;
+    font-weight: bolder;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 3px;
+    margin-right: 60px;
+}
+
+.nav__links li{
+   
+    text-align: center;
+    color: white;
+    margin-right: 10px;
+    display: inline-block;
+    
+}
+
+.nav__links li a{
+    font-weight: 1000;
+     text-decoration: none;
+    transition: all 0.3s ease 0s;
+    padding: 0 10px;
+} 
+
+
+.shopAndIcon {
+    gap: 10px;
+    padding-right:50px ;
+    
+    font-weight: bolder;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    gap: 10px;
+    
+    padding: 0;
+    top: 3px;
+    margin-right: 60px;
+   
+}
+
+.shopAndIcon li {
+    color: white;
+    
+    display: inline-block;
+
+ }
+ .shopAndIcon li a {
+    font-weight: 1000;
+     text-decoration: none;
+    transition: all 0.3s ease 0s;
+    padding: 0 10px;
+ }
+
+
+.mainpage {
+    padding-left: 40px;
+    color: #fff;
+    font-weight: 700;
+    
+}
+ .seconddiv {
+    font-weight: normal;
+    font-size: 20px;
+    
+    padding-top: 25%;
+ }
+ .seconddiv p{
+    animation: fadeinUp 0.5s ease-in-out;
+ }
+
+ .seconddiv h1{
+    animation: fadeinUp 0.5s ease-in-out 0.2s;
+    animation-fill-mode: both;
+    font-weight: 900;
+   font-size: 45px;
+ }
+
+button {
+    animation: fadeinUp 0.5s ease-in-out 0.5s;
+    animation-fill-mode: both;
+
+    position: relative;
+    background:transparent;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 0 #ffffff;
+  }
+  
+  button:hover {
+    color: rgb(0, 0, 0);
+    box-shadow: inset 0 -100px 0 0 #ffffff;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+  @keyframes fadeinUp {
+    0% {
+        opacity: 0;
+        transform: translateY(140px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+  }
+
+
+/* 
+  menu{
+    margin:0;
+}
+
+menu{
+    width:400px;
+    background-color:var(--dark);
+    z-index:999;
+    position:fixed;
+    right:-400px;
+    overflow:hidden;
+    height:100%;
+    transition:0.5s;
+    padding:6rem 2rem;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    transition:0.5s;
+    opacity:0;
+    z-index:-1;
+    background-color:var(--gray);
+}
+
+.close{
+    float:right;
+    border:2px solid var(--lite);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:30px;
+    height:32px;
+    padding:0.5rem;
+    color:var(--lite);
+    position:absolute;
+    top:5%;
+    right:5%;
+}
+
+.close:hover{
+    color:var(--white);
+    border:2px solid var(--white);
+}
+
+menu li{
+    padding:0.8rem 0;
+    list-style:none;
+}
+
+menu li a{
+    color:var(--lite);
+}   
+
+menu li i{
+    color:var(--primary_dark);
+}
+
+menu li a:hover{
+    color:var(--white);
+} */
+/* 
+@media (max-width:920px){
+    nav{
+        padding:1rem;
+    }
+    
+    nav .ham{
+        width:30px;
+        height:30px;
+    }
+    
+    nav .nav_content{
+        width:200px;
+        background-color:var(--dark);
+        z-index:999 !important;
+        position:fixed;
+        top:0;
+        right:-200px;
+        overflow:hidden;
+        height:100%;
+        transition:0.5s;
+    }
+    
+    nav .nav_content a{
+        display:block;
+        padding:0.4rem 0rem;
+        margin:1rem;
+        font-size:20px;
+    }
+} */
+
+.secondHomePage {
+        background-image: url("Launch_Page_Starlink1_vertical_18_DESKTOP_c851b30656.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%; 
+        height: 100vh;
+}
+.mainpagetwo {
+    padding-left: 40px;
+    color: #fff;
+    font-weight: 700;
+    
+}
+ .seconddivtwo {
+    font-weight: normal;
+    font-size: 20px;
+    padding-top: 30%;
+    padding-bottom: 101px;
+ }
+ .seconddivtwo p{
+    animation: fadeinUp 0.5s ease-in-out;
+ }
+
+ .seconddivtwo h1{
+    animation: fadeinUp 0.5s ease-in-out 0.2s;
+    animation-fill-mode: both;
+    font-weight: 900;
+   font-size: 45px;
+ }
+
+ 
+.trdhomepage {
+    background-image: url("Star6_17_091923_DSC_5931_desktop_5d8a7a18c0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    height: 100vh;
+}
+.mainpagethree {
+padding-left: 40px;
+color: #fff;
+font-weight: 700;
+
+}
+.mainpagethree {
+font-weight: normal;
+font-size: 20px;
+padding-bottom: 89px;
+
+padding-top: 30%;
+}
+.seconddivthree p{
+animation: fadeinUp 0.5s ease-in-out;
+}
+
+.seconddivthree h1{
+animation: fadeinUp 0.5s ease-in-out 0.2s;
+animation-fill-mode: both;
+font-weight: 900;
+font-size: 45px;
+}
+
+
+.fourthhomepage {
+    background-image: url("Crew_6_Desktop_9857f5c2f0.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    height: 100vh;
+}
+.mainpagefour {
+padding-left: 40px;
+color: #fff;
+font-weight: 700;
+
+}
+.mainpagefour {
+font-weight: normal;
+font-size: 20px;
+padding-bottom: 101px;
+padding-top: 30%;
+padding-bottom: 89px;
+}
+.seconddivfour p{
+animation: fadeinUp 0.5s ease-in-out;
+}
+
+.seconddivfour h1{
+animation: fadeinUp 0.5s ease-in-out 0.2s;
+animation-fill-mode: both;
+font-weight: 900;
+font-size: 45px;
+}
+
+
+.fivthhomepage {
+    background-image: url("STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    height: 100vh;
+}
+.mainpagefive {
+padding-left: 40px;
+color: #fff;
+font-weight: 700;
+
+}
+.mainpagefive {
+font-weight: normal;
+font-size: 20px;
+
+padding-top: 30%;
+}
+.seconddivfive p{
+animation: fadeinUp 0.5s ease-in-out;
+}
+
+.seconddivfive h1{
+animation: fadeinUp 0.5s ease-in-out 0.2s;
+animation-fill-mode: both;
+font-weight: 900;
+font-size: 45px;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    
+}
+
+.footer {
+   
+    
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 39%;
+    display: flex;
+    gap: 20px;
+}
+
+.footer p{
+   font-size: 10px;
+    font-weight: 900;
+}
+.footer a{ 
+    font-weight: 900;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+
+
